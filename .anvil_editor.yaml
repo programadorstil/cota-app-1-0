@@ -4,5 +4,8 @@ unique_ids:
   modules: {}
   server_modules: {}
   assets:
+    meu_logo.png: '1683060777261624547506146.5251'
+    meu_logo_menor.png: '1683061013584968658475440.5299'
+    meu_logo_menor_02.png: '168306112604911309558181.413548'
     standard-page.html: MG676C2KUOC72HXTNLCSROZOQG254N6J
     theme.css: LVBQ23DTEIGK2UEPSYLJ43OVNT5S7G32

@@ -17,16 +17,16 @@ components:
     layout_properties: {grid_position: 'ULESMU,JBBMPS'}
     event_bindings: {pressed_enter: text_box_1_pressed_enter}
   - type: Button
-    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-      foreground: '', visible: true, text: Cotar, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
+    properties: {role: elevated-button, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: '      Cotar      ', font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false, icon: ''}
     name: button_1
     layout_properties: {grid_position: 'SZMONI,RJDLID'}
     event_bindings: {click: button_1_click}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: ' a', font_size: null, font: '', spacing_above: small,
+      visible: true, text: '  ', font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_1

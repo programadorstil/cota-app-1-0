@@ -8,6 +8,7 @@ allow_embedding: false
 name: Cota_App_1.0
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
-metadata: {title: Cotação de moedas simples, description: Aplicativo simples e leve que faz a cotação das principais moedas para BRL}
+metadata: {title: Cotação de moedas simples, description: Aplicativo simples e leve que faz a cotação das principais moedas para BRL,
+  logo_img: 'asset:meu_logo_menor_02.png'}
 startup_form: Form1
 renamed: true
