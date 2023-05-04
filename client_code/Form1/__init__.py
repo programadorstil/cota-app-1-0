@@ -17,6 +17,8 @@ class Form1(Form1Template):
   def button_1_click(self, **event_args):
     
     txt = self.text_box_1.text
+    txt = txt.upper()
+    print(txt)
     
     
    #requisição 
@@ -38,7 +40,7 @@ class Form1(Form1Template):
     
 
   def text_box_1_pressed_enter(self, **event_args):
-    """This method is called when the user presses Enter in this text box"""
+    self.button_1_click()
     pass
 
 
