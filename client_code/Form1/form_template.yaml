@@ -9,10 +9,10 @@ components:
   layout_properties: {slot: default}
   components:
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: digite a moeda que deseja cotar ex. USD BTC para BRL,
-      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
-      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
-      background: '', bold: false, underline: false}
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: 'digite
+        EUR, USD, BTC para BRL', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
     name: text_box_1
     layout_properties: {grid_position: 'ULESMU,JBBMPS'}
     event_bindings: {pressed_enter: text_box_1_pressed_enter}
