@@ -50,11 +50,7 @@ class Form1(Form1Template):
         
     
 
-  def text_box_1_pressed_enter(self, **event_args):
-    self.button_1_click()
-    pass
-
-
+  
  
     
     

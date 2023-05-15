@@ -8,13 +8,31 @@ components:
   name: content_panel
   layout_properties: {slot: default}
   components:
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Bem Vindo ao APP Cota BRL !
+
+
+        Para ver a cotação  digite o símbolo da moeda ex.: USD -> e verá a cotação
+        em Real Brasileiro.
+
+        moedas suportadas(EUR e USD, por enquanto)
+
+
+        Criptomoedas suportadas:
+
+        BTC, ETH , XRP e DOGE', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_descricao
+    layout_properties: {grid_position: 'RROMOH,FNMDMW'}
   - type: TextBox
-    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: 'digite
-        EUR, USD, BTC para BRL', border: '', enabled: true, foreground: '', visible: true,
-      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false}
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: insira o símbolo da moeda aqui,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
     name: text_box_1
-    layout_properties: {grid_position: 'ULESMU,JBBMPS'}
+    layout_properties: {grid_position: 'ULESMU,MXWYLU'}
     event_bindings: {pressed_enter: text_box_1_pressed_enter}
   - type: Button
     properties: {role: elevated-button, align: center, tooltip: '', border: '', enabled: true,
