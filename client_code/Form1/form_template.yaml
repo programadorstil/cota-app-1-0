@@ -35,7 +35,7 @@ components:
       border: ''
       enabled: true
       foreground: ''
-      items: [USD, EUR, BRL, BTC, ETH, XRP, DOGE, '']
+      items: [USD, EUR, BRL, BTC, ETH, XRP, DOGE]
       visible: true
       font_size: null
       font: ''
@@ -49,6 +49,13 @@ components:
     name: drop_down_1
     layout_properties: {grid_position: 'RBBHFK,RRZYXF'}
     event_bindings: {change: drop_down_1_change}
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: '>>>>>>', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_2
+    layout_properties: {grid_position: 'CSJZCJ,ORZNOR'}
   - type: DropDown
     properties:
       role: null
@@ -58,7 +65,7 @@ components:
       border: ''
       enabled: true
       foreground: ''
-      items: [USD, EUR, BRL, BTC, ETH, XRP, DOGE]
+      items: [BRL, EUR, USD, BTC, ETH, XRP, DOGE]
       visible: true
       font_size: null
       font: ''

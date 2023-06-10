@@ -23,12 +23,29 @@ class Form1(Form1Template):
     else:
       urlcomplete = site + selecao1 + "-" + selecao2
       print(urlcomplete)
+      if selecao2 == 'USD':
+        simbol = "Dollar(s)"
+      elif selecao2 == 'BRL':
+        simbol = "Reais"
+      elif selecao2 == 'EUR':
+        simbol = "Euro(s)"
+      elif selecao2 == 'BTC':
+        simbol = "Bitcoin(s)"
+      elif selecao2 == 'ETH':
+        simbol = "Ethereum"
+      elif selecao2 == 'XRP':
+        simbol = "Riplle(s)"
+      elif selecao2 == 'DOGE':
+        simbol = "Dogecoin(s)"
+        
       #require API 
       requisicao = anvil.http.request(urlcomplete, method="GET", json=True)
+
       join = selecao1+selecao2
 
       cotacao = requisicao[join]['bid']
-      print(cotacao)
+      txt = "A cotação de " + selecao1 + " para " + selecao2 + " é " +cotacao +" "+simbol 
+      self.label_1.text = txt
     
     
     
