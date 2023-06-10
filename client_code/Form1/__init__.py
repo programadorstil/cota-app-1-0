@@ -2,7 +2,7 @@ from ._anvil_designer import Form1Template
 from anvil import *
 import anvil.server
 import anvil.http
-'''This is a simple example application created by me using kivyMD, using the requests API
+'''This is a simple example application created by me using Anvil, using the requests API
 with response to currency quote, with text input and click action button.
 '''
 
@@ -13,40 +13,35 @@ class Form1(Form1Template):
     
 
     # Any code you write here will run before the form opens.
-
   def button_1_click(self, **event_args):
-    
-    txt = self.text_box_1.text
-    txt = txt.upper()
-    print(txt)
-    
-    
-   #requisição 
-    requisicao = anvil.http.request("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL,ETH-BRL,XRP-BRL,DOGE-BRL", method="GET", json=True)
-    
-    cotacao_dolar = requisicao['USDBRL']['bid']
-    cotacao_euro = requisicao['EURBRL']['bid']
-    cotacao_btc = requisicao['BTCBRL']['bid']
-    cotacao_eth = requisicao['ETHBRL']['bid']
-    cotacao_xrp = requisicao['XRPBRL']['bid']
-    cotacao_doge = requisicao['DOGEBRL']['bid']
-    #verificação do que foi digitado
-    if txt == "USD":
-      self.label_1.text = " A cotaçõa atual do " + txt + " é  R$ "+ cotacao_dolar
-    elif txt == "EUR":
-      self.label_1.text = " A cotaçõa atual do  " + txt + " é  R$ "+ cotacao_euro
-    elif txt == "BTC":
-      self.label_1.text = " A cotaçõa atual do  " + txt + " é  R$ "+ cotacao_btc
-    elif txt == "ETH":
-      self.label_1.text = " A cotaçõa atual do  " + txt + " é  R$ "+ cotacao_eth
-    elif txt == "XRP":
-      self.label_1.text = " A cotaçõa atual do  " + txt + " é  R$ "+ cotacao_xrp  
-    elif txt == "XRP":
-      self.label_1.text = " A cotaçõa atual do  " + txt + " é  R$ "+ cotacao_xrp    
-    elif txt == "DOGE":
-      self.label_1.text = " A cotaçõa atual do  " + txt + " é  R$ "+ cotacao_doge    
+    selecao1 = self.drop_down_1.selected_value
+    selecao2 = self.drop_down_2.selected_value
+    site = "https://economia.awesomeapi.com.br/last/"
+    equal = selecao1 == selecao2
+    if equal:
+      alert("dropdows is equal")
     else:
-      alert("Opção invalida!!\n\nPara moedas digite:\n USD ou EUR \n  Para Cripto,digite:\n BTC, ou ETH, ou XRP, ou DOGE ")
+      urlcomplete = site + selecao1 + "-" + selecao2
+      print(urlcomplete)
+      #require API 
+      requisicao = anvil.http.request(urlcomplete, method="GET", json=True)
+      join = selecao1+selecao2
+
+      cotacao = requisicao[join]['bid']
+      print(cotacao)
+    
+    
+    
+    
+    
+    
+  
+ 
+
+
+
+
+ 
         
     
 
