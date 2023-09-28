@@ -1,5 +1,5 @@
 # Sobre o Cota-App PT-BR
-Este  é um aplicativo web que informa a cotação de algumas moedas e criptomoedas utililizando uma API como fonte de dados em tempo real e mostra a conversão para unidade de moeda escolhida pelo usuário. e  foi feito em python junto com a ferramenta 
+Este  é um aplicativo web que informa a cotação de algumas moedas e criptomoedas utililizando uma API como fonte de dados em tempo real e mostra a conversão para unidade de moeda escolhida pelo usuário. e  foi feito em python junto com a ferramenta Anvil
 
 ##O que foi utilizado
 Python 3.10.6
