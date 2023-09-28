@@ -1,4 +1,4 @@
-# Sobre o Cota-App
+# Sobre o Cota-App PT-BR
 Este  é um aplicativo web que informa a cotação de algumas moedas e criptomoedas utililizando uma API como fonte de dados em tempo real e mostra a conversão para unidade de moeda escolhida pelo usuário. e  foi feito em python junto com a ferramenta 
 
 ##O que foi utilizado
@@ -10,8 +10,13 @@ O [Anvil](https://anvil.works/) para o desing low-code
 ###Observação:
 	Caso queira ver um projeto parecido para web e mobile utilizando KivyMD, acesse:
 		www.github.com/programadorstil/pythonProject
-	
 
+ # About is Cota-App EN-US
+This is a web application that reports the price of some currencies and cryptocurrencies using an API as a real-time data source and shows the conversion to the currency unit chosen by the user. and it was done in python along with the tool
+
+##What was used Python 3.10.6 lib requests to communicate with the quotation API API:economia.awesomeapi.com.br, which responds in JSON format to the current price of the chosen currency pair. Anvil for low-code design
+
+###Note: If you want to see a similar project for web and mobile using KivyMD, visit: www.github.com/programadorstil/pythonProject
 
 
 
